@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="https://use.typekit.net/pum4pua.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.6/ScrollTrigger.min.js" integrity="sha512-+LXqbM6YLduaaxq6kNcjMsQgZQUTdZp7FTaArWYFt1nxyFKlQSMdIF/WQ/VgsReERwRD8w/9H9cahFx25UDd+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/circular-revealer@0.0.8/dist/index.iife.js"></script>
+    <title>livdesignz.com</title>
+</head>
+
+<body>
+
+<section class="landing-page">
+  
+    <header>
+        <div>
+            <button class="header__button nav-btn-js" type="button"></button>
+            <img src="images/white-logo.svg" alt="Liv Logo" width="50px" height="50px">
+            <nav class="header__nav nav-js" data-active="false">
+                <ul class="header__menu">
+                    <li class="header__menu-item"><a href="portfolio-main.html">Portfolio</a></li>
+                    <li class="header__menu-item"><a href="services.html">Services</a></li>
+                    <li class="header__menu-item"><a href="about.html">About</a></li>
+                    <li class="header__menu-item"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+   
+    <div class="heading-1">
+        <h1>Hi, I'm Liv.</h1>
+        <p class="p-subtitle">A UX / UI designer based in Auckland, NZ</p> 
+       <p class="p-landing-blurb">I am a designer that optimises experience. I do this through collaborative design, human centered design, and always thinking about the usability and functionality of a designed product or service to suit the user it is intended for, ensuring positive creative outcomes.</p>
+
+       <iframe src='https://my.spline.design/untitled-97d9a74a1c485e0239a8f5ed02a9d79b/' frameborder='0' width='100%' height='100%'></iframe>
+     
+
+
+       <div class="ctas">
+         <a href="portfolio-main.html"><p class="hover-underline-animation">VIEW PORTFOLIO</p></a>
+        </div>
+    </div>
+</section>
+
+    
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const revealerNav = window.revealer({
+            revealElementSelector: ".nav-js",
+            options: {
+                anchorSelector: ".nav-btn-js",
+            },
+        });
+
+        const actionBtn = document.querySelector(".nav-btn-js");
+        actionBtn.addEventListener("click", () => {
+            if (!revealerNav.isRevealed()) {
+                revealerNav.reveal();
+                actionBtn.setAttribute("data-open", true);
+            } else {
+                revealerNav.hide();
+                actionBtn.setAttribute("data-open", false);
+            }
+        });
+    });
+</script>
+
+
+   <!-- <div class="loader-text-wrapper block">
+         <h1 class="loader-text">liv designz</h1>
+    </div>
+    <div class="revealer"></div>
+    <div class="pre-loader block">
+        <div class="loader-wrapper">
+            <div class="loader"></div>
+        </div>
+    </div>
+    -->
+
+
+
+
+
+
+
+ <script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,273 @@
+/* VARIABLES */
+:root {
+    --colour-1: #121212;
+    --colour-2: #ffffff;
+    --colour-3: #bb86fc;
+    --colour-4: #03dac6;
+    --colour-5: #cf6679;
+    --colour-6: #3700b3;
+    --colour-7: #018786;
+    --colour-8: #b00020;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "aileron", sans-serif;
+    
+}
+
+html
+body {
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 2.5%;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    background: none;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+.p-subtitle{
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 125%;
+}
+
+.p-landing-blurb {
+    font-size: 1rem;
+    line-height: 125%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 19%;
+    padding-right: 19%;
+}
+
+/* NAV */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav svg {
+    cursor: pointer;
+    z-index: 1;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.nav-hidden-logo {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.links {
+    position: absolute;
+    background: var(--colour-2);
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+}
+
+
+.links a {
+    color: var(--colour-1);
+    font-size: 3rem;
+    font-weight: 500;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    line-height: 150%;
+
+}
+
+.links a:hover {
+    color: var(--colour-3);
+}
+
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.landing-page {
+    min-height: 100vh;
+    color: var(--colour-2);
+}
+
+.heading-1 {
+    margin-top: 18vh;
+    text-align: center;
+}
+
+iframe {
+    width: 100%;
+    margin-top: -2%;
+    margin-right: auto;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+}
+
+.ctas {
+    margin-top: 2rem;
+    margin-bottom: 2px;
+}
+
+.ctas p {
+    z-index: -1;
+    text-decoration: underline var(--colour-2) 2px;
+}
+
+
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: var(--colour-2);
+
+  }
+  
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--colour-2);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+
+
+
+
+
+
+
+
+/* INTRO ANIMATION */
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: var(--colour-1);
+}
+
+.testing {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -100px;
+    color: var(--colour-2);
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+}
+
+.loader-text-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--colour-1);
+}
+
+.loader-text {
+    font-family: "aileron", sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    color: var(--colour-2);
+    z-index: 2;
+}
+
+.loader-text .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
+.revealer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--colour-2);
+    z-index: 2;
+}
+
+.pre-loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--colour-1);
+}
+
+.loader-wrapper {
+    position: relative;
+    width: 10px;
+    height: 140px;
+    background: var(--colour-2);
+    border: 4px;
+    border-radius: 10px;
+    overflow: hidden;
+    transform: rotate(90deg);
+}
+
+.loader {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: var(--colour-3);
+    background: linear-gradient(100deg, rgba(3, 218, 198, 1) 0%, rgba(187, 134, 252, 1) 100%);
+}
+
+

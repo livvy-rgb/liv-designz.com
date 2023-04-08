@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/porfolio.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="https://use.typekit.net/pum4pua.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.6/ScrollTrigger.min.js" integrity="sha512-+LXqbM6YLduaaxq6kNcjMsQgZQUTdZp7FTaArWYFt1nxyFKlQSMdIF/WQ/VgsReERwRD8w/9H9cahFx25UDd+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js"></script>
+    <script src="https://kit.fontawesome.com/1c5092d014.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/circular-revealer@0.0.8/dist/index.iife.js"></script>
+    <script defer src="js/app.js"></script>
+    <title>livdesignz.com</title>
+</head>
+
+<body>
+    <section>
+   
+        <header>
+            <div>
+                <button class="header__button nav-btn-js" type="button"></button>
+                <a href="index.html"><img src="images/white-logo.svg" alt="Liv Logo" width="50px" height="50px"></a>
+                <nav class="header__nav nav-js" data-active="false">
+                    <ul class="header__menu">
+                        <li class="header__menu-item"><a href="portfolio-main.html">Portfolio</a></li>
+                        <li class="header__menu-item"><a href="services.html">Services</a></li>
+                        <li class="header__menu-item"><a href="about.html">About</a></li>
+                        <li class="header__menu-item"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+</section>
+
+<section id="main-heading">
+    <div class="main-heading-pages hidden">
+    <h1>Contact</h1>
+</div>
+<hr class="hidden">
+<div class="uppercase-blurb-pages hidden">
+    <p class="short-sentence">DROP ME A MESSAGE, I'D LOVE TO HEAR FROM YOU</p>
+</div>
+</section>
+
+<section id="contact-form" class="hidden">
+
+   <h2>Say Hello</h2>
+
+
+    <form id="form" class="topBefore" action="https://formsubmit.co/info@livdesignz.com" method="POST">
+        <input type="hidden" name="_next" value="https://livdesignz.com/thank-you.html">
+              <input id="name" type="text" placeholder="NAME" required>
+              <input id="email" type="text" placeholder="E-MAIL" required>
+              <textarea id="message" type="text" placeholder="MESSAGE" required></textarea>
+      <input id="submit" type="submit" value="SEND">
+     
+    </form>
+</section>
+
+<footer>
+    <div class="footer-row">
+        <div class="footer-col"><img src="images/white-logo.svg" alt="Liv Logo" width="100px" height="100px"></div>
+        <div class="footer-col">
+            <p>Contact</p>
+            <a href="contact.html"><p class="email-id">info@livdesignz.com</p></a>
+            <a href="#"><i id="footer-socials" class="fa-brands fa-instagram fa-beat fa-2xl"></i><a>
+                <a href="#"><i  id="footer-socials" class="fa-brands fa-linkedin fa-beat fa-2xl"></i></a>
+          <a href="#"><i id="footer-socials" class="fa-brands fa-pinterest fa-beat fa-2xl"></i></a>
+            <a href="#"></a><i id="footer-socials" class="fa-solid fa-basketball fa-beat fa-2xl"></i></a>
+        </div>
+        <div class="footer-col">
+            <ul>
+                <li><a href="portfolio-main.html">Portfolio</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <p class="copy">&copy;All Rights Reserved 2023 - livdesignz.com</p>
+        <div class="footer-col"></div>
+    </div>
+</footer>
+
+</section>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const revealerNav = window.revealer({
+            revealElementSelector: ".nav-js",
+            options: {
+                anchorSelector: ".nav-btn-js",
+            },
+        });
+
+        const actionBtn = document.querySelector(".nav-btn-js");
+        actionBtn.addEventListener("click", () => {
+            if (!revealerNav.isRevealed()) {
+                revealerNav.reveal();
+                actionBtn.setAttribute("data-open", true);
+            } else {
+                revealerNav.hide();
+                actionBtn.setAttribute("data-open", false);
+            }
+        });
+    });
+</script>
+
+ <script src="js/script.js"></script>
+</body>
+</html>
