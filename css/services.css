@@ -18,22 +18,77 @@
     
 }
 
+.tech-ser {
+    display: flex;
+    padding-bottom: 20px;
+   
+}
+
+.tech-title-ser {
+    width: 50%;
+    display: flex;
+}
+
+.tech-images-ser {
+    float: left;
+    width: 50%;
+    padding-bottom: 20px;
+   
+}
+
+
+.tech-images-info-ser {
+    float: left;
+  width: 50%;
+  padding: 5px 5px 5px 5px;
+}
+
+
+
+.tech-images-info-ser img{
+    padding-right: -1rem;
+    margin-top: 10px;
+   
+}
+
+.tech-images-info-ser p {
+    color: var(--colour-2);
+    margin-top: 6px;
+}
+
+.small-p {
+    font-size: 0.8rem;
+    margin-top: 5px;
+    line-height: 125%;
+}
+
+
+
 .faq {
     margin-top: 3rem;
     padding-bottom: 1rem;
     cursor: pointer;
 }
 
+
+
 .question {
     color: var(--colour-2);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: 0.5s ease-in;
+}
+
+.question:hover {
+    color: var(--colour-3);
+    transition: 0.5s ease-out;
 }
 
 .answer {
     max-height: 0;
     overflow: hidden;
+    transition: 0.5s ease-in-out;
 }
 
 .answer p {
@@ -42,9 +97,128 @@
     padding-top: 1rem;
     line-height: 125%;
     padding-bottom: 2rem;
+   
 }
 
 .faq.active .answer {
     max-height: 300px;
+    transition: 0.5s ease-in-out;
 }
 
+/* TECH SPECIALITIES */
+
+.tech-images-tech {
+    float: left;
+    width: 50%;
+    padding-bottom: 20px;
+   
+}
+
+.tech-images-info-tech {
+float: left;
+  width: 50%;
+  padding: 5px 5px 5px 5px;
+  cursor: default;
+  transition: 0.5s ease-out;
+}
+
+.tech-images-info-tech h3:hover {
+    color: var(--colour-4);
+    transition: 0.5s ease-in;
+}
+
+
+.tech-images-info-tech hr {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+
+
+
+/* GET IN TOUCH */ 
+
+#call-to-action-ser {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+
+.main-heading-pages-sub {
+    color: var(--colour-2);
+    display: flex;
+    cursor: default;
+}
+
+.call-to-action-btn-ser {
+    display: inline-block;
+    margin-top: 2.5rem;
+    margin-left: 40rem;
+    width: 70px;
+    height: 45px;
+    border: none;
+    background: var(--colour-2);
+    color: var(--colour-1);
+    cursor: pointer;
+    transition: ease-out 0.5s;
+}
+
+.call-to-action-btn-ser:hover {
+    background-color: var(--colour-3);
+    transition: ease-in 0.5s;
+}
+
+
+.main-heading-pages-sub:hover {
+    color: var(--colour-3);
+}
+
+.uppercase-blurb-pages-sub {
+    color: var(--colour-2);
+    font-size: 0.8rem;
+    margin-top: 6px;
+    margin-bottom: 25px;
+}
+
+
+.lowercase-blurb-pages {
+    color: var(--colour-2);
+    font-size: 0.8rem;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 768px){ 
+    .tech-title-ser h2 {
+        font-size: 2rem;
+    }
+
+    .tech-images-info-ser img{
+        width: 60px;
+        height: 60px;
+    }
+
+    .small-p {
+        display: none;
+    }
+
+    .tech-title-ser h2 {
+        font-size: 2rem;
+    }
+
+    .tech-images-info-tech h3 {
+        font-size: 0.8rem;
+    }
+
+    .question h1 {
+        font-size: 3rem;
+    }
+
+    .call-to-action-btn-ser {
+        margin-top: 3rem;
+        margin-left: 1rem;
+        
+        
+    }
+}

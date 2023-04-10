@@ -1,0 +1,70 @@
+:root {
+    --colour-1: #121212;
+    --colour-2: #ffffff;
+    --colour-3: #bb86fc;
+    --colour-4: #03dac6;
+    --colour-5: #cf6679;
+    --colour-6: #3700b3;
+    --colour-7: #018786;
+    --colour-8: #b00020;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "aileron", sans-serif;
+    
+}
+
+/* CALL TO ACTION */
+
+.call-to-action-btn-about {
+    display: inline-block;
+    margin-top: 2.5rem;
+    margin-left: 45rem;
+    width: 70px;
+    height: 45px;
+    border: none;
+    background: var(--colour-2);
+    color: var(--colour-1);
+    cursor: pointer;
+    transition: ease-out 0.5s;
+}
+.call-to-action-btn-about:hover {
+    background: var(--colour-3);
+    transition: ease-out 0.5s;
+}
+
+@media screen and (max-width: 768px){ 
+    .project-pages {
+        width: 60%;
+    }
+
+    .project-title h2 {
+        font-size: 2rem;
+    }
+    
+    .project-pages img {
+        width: 200px;
+    }
+
+    .project-pages-info {
+        margin-top: 3rem;
+    }
+
+    .tech-title-ser h2{
+        font-size: 2rem;
+    }
+
+    .tech-images-info-tech h3 {
+        font-size: 0.8rem;
+    }
+
+    .call-to-action-btn-about {
+        margin-top: 1.5rem;
+        margin-left: 5rem;
+        
+        
+    }
+}

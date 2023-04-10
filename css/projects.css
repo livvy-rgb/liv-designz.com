@@ -219,6 +219,23 @@ h3 {
     cursor: pointer;
     transition: ease-out 0.5s;
 }
+.call-to-action-btn-1 {
+    display: inline-block;
+    margin-top: 2.5rem;
+    margin-left: 55rem;
+    width: 70px;
+    height: 45px;
+    border: none;
+    background: var(--colour-2);
+    color: var(--colour-1);
+    cursor: pointer;
+    transition: ease-out 0.5s;
+}
+
+.call-to-action-btn-1:hover{
+    background: var(--colour-3);
+    transition: ease-in 0.5s;
+}
 
 /* OLDSCHOOL PAGE */
 
@@ -244,3 +261,74 @@ h3 {
     transition: ease-in 0.5s;
 }
 
+@media screen and (max-width: 768px){ 
+
+    h1 {
+        font-size: 4rem;
+        font-weight: 700;
+        background: none;
+    }
+    .landing-image-container img {
+        width: 430px;
+        height: 280px;
+    }
+
+    .project {
+        margin-top: 1rem;
+    }
+
+    .project-title h2 {
+        font-size: 2rem;
+    }
+
+    .project-pages{
+        width: 60%;
+    }
+
+    .project-pages-info {
+        margin-top: 1rem;
+    }
+
+    .project-pages-info h3 {
+        font-size: 1.2rem;
+    }
+
+    .project-pages-info p {
+        font-size: 0.8rem;
+    }
+
+    .tech-title h2 {
+        font-size: 2rem;
+    }
+
+    .tech-images-info img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .tech-images-info p {
+        font-size: 0.6rem;
+    }
+
+    .card {
+        width: 250px;
+        height: 250px;
+        position: relative;
+       
+    }
+
+    .card img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .call-to-action-btn {
+        margin-top: 1rem;
+        margin-left: 2rem;
+    }
+
+    .call-to-action-btn-1{
+        margin-top: 1rem;
+        margin-left: 10rem;
+    }
+}

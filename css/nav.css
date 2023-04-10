@@ -104,10 +104,11 @@ header {
 	font-weight: 300;
 	color: var(--colour-1);
 	text-decoration: none;
-    transition: ease-out 0.2s;
+    transition: ease-in 0.5s;
 }
 
 .header__menu-item a:hover {
     color: var(--colour-3);
-    transition: ease-in 0.2s;
+    transition: ease-out 0.5s;
 }
+

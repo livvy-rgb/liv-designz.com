@@ -72,6 +72,10 @@ hr {
     cursor: pointer;
 }
 
+.card-container-empty {
+    display: none;
+}
+
 .card-logo {
     position: absolute;
     top: 50%;
@@ -382,6 +386,23 @@ footer {
 }
 
 @media screen and (max-width: 768px){
+    #call-to-action {
+        margin-top: 3rem;
+    }
+
+    .call-to-action-btn {
+        display: inline-block;
+        margin-top: 5rem;
+        margin-left: 2rem;
+        width: 70px;
+        height: 45px;
+        border: none;
+        background: var(--colour-2);
+        color: var(--colour-1);
+        cursor: pointer;
+        transition: ease-out 0.5s;
+    }
+
     .footer-row {
         width: 85%;
         margin: auto;

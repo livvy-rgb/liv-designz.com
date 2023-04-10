@@ -29,6 +29,95 @@ section {
     padding: 2.5%;
 }
 
+/* INTRO ANIMATION */
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: var(--colour-1);
+}
+/*
+.testing {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -100px;
+    color: var(--colour-2);
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+}
+
+.loader-text-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--colour-1);
+}
+
+.loader-text {
+    font-family: "aileron", sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    color: var(--colour-2);
+    z-index: 2;
+}
+
+.loader-text .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
+.revealer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--colour-2);
+    z-index: 2;
+}
+
+.pre-loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--colour-1);
+}
+
+.loader-wrapper {
+    position: relative;
+    width: 10px;
+    height: 140px;
+    background: var(--colour-2);
+    border: 4px;
+    border-radius: 10px;
+    overflow: hidden;
+    transform: rotate(90deg);
+}
+
+.loader {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: var(--colour-3);
+    background: linear-gradient(100deg, rgba(3, 218, 198, 1) 0%, rgba(187, 134, 252, 1) 100%);
+}
+*/
+
+
+
 h1 {
     font-size: 5rem;
     font-weight: 700;
@@ -144,130 +233,41 @@ iframe {
     margin-bottom: 2px;
 }
 
+.ctas button {
+    color: var(--colour-2);
+    background: none;
+    border-top: 6px var(--colour-2);
+    border-left: 4px var(--colour-2);
+    border-right: 4px var(--colour-2);
+    padding: 10px 5px 10px 5px;
+
+}
+
+.ctas a {
+    text-decoration: none;
+}
+
 .ctas p {
     z-index: -1;
-    text-decoration: underline var(--colour-2) 2px;
+    color: white;
+    text-decoration: none;
+    border: none;
+    transition: 0.5s ease-in;
+ 
+}
+.ctas p:hover {
+    z-index: -1;
+    color: var(--colour-3);
+    transition: 0.5s ease-out;
 }
 
+@media screen and (max-width: 768px){
+    .p-landing-blurb {
+        display: none;
+    }
 
-
-.hover-underline-animation {
-    display: inline-block;
-    position: relative;
-    color: var(--colour-2);
-
-  }
-  
-  .hover-underline-animation::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 3px;
-    bottom: 0;
-    left: 0;
-    background-color: var(--colour-2);
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-  }
-  
-  .hover-underline-animation:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
-
-
-
-
-
-
-
-
-
-/* INTRO ANIMATION */
-
-body {
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    background: var(--colour-1);
+    .heading-1 {
+        margin-top: 26vh;
+        text-align: center;
+    }
 }
-
-.testing {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    margin-top: -50px;
-    margin-left: -100px;
-    color: var(--colour-2);
-}
-
-.block {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    z-index: 2;
-}
-
-.loader-text-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: var(--colour-1);
-}
-
-.loader-text {
-    font-family: "aileron", sans-serif;
-    font-size: 18px;
-    letter-spacing: 0.5px;
-    font-weight: 700;
-    color: var(--colour-2);
-    z-index: 2;
-}
-
-.loader-text .letter {
-    display: inline-block;
-    line-height: 1em;
-}
-
-.revealer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: var(--colour-2);
-    z-index: 2;
-}
-
-.pre-loader {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: var(--colour-1);
-}
-
-.loader-wrapper {
-    position: relative;
-    width: 10px;
-    height: 140px;
-    background: var(--colour-2);
-    border: 4px;
-    border-radius: 10px;
-    overflow: hidden;
-    transform: rotate(90deg);
-}
-
-.loader {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    background: var(--colour-3);
-    background: linear-gradient(100deg, rgba(3, 218, 198, 1) 0%, rgba(187, 134, 252, 1) 100%);
-}
-
-
