@@ -36,6 +36,12 @@
     transition: ease-out 0.5s;
 }
 
+br {
+    display: block;
+   margin: 5.7px 0;
+  content: " ";
+}
+
 @media screen and (max-width: 768px){ 
     .project-pages {
         width: 60%;

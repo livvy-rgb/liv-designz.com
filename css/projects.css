@@ -93,6 +93,12 @@ h3 {
     margin-bottom: 10px;
 }
 
+br {
+    display: block;
+   margin: 5.7px 0;
+  content: " ";
+}
+
 .tech {
     display: flex;
    
